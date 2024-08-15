@@ -20,7 +20,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     binary_search.h \
+    boost_timer.h \
     coroutine_example.h \
+    example_code.h \
     factorial.h \
     redis.h \
     selection_sorting.h
