@@ -35,4 +35,5 @@
 *.autosave
 *.cache
 *.config
-.qtc_clang/
+
+build/
