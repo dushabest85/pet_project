@@ -24,5 +24,6 @@ HEADERS += \
     coroutine_example.h \
     example_code.h \
     factorial.h \
-    redis.h \
+    redis_cache.h \
+    redis_stream.h \
     selection_sorting.h
