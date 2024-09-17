@@ -8,13 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Указываем директорию для сборки
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# Указываем исходные файлы
-set(SOURCE_FILES
-    src/main.cpp
-)
-
-# Указываем заголовочные файлы
-set(HEADER_FILES
+add_executable(pet_project ${SOURCE_FILES} ${HEADER_FILES}
+    include/pet_project/features.h
     include/pet_project/binary_search.h
     include/pet_project/boost_timer.h
     include/pet_project/coroutine_example.h
@@ -23,7 +18,5 @@ set(HEADER_FILES
     include/pet_project/redis_cache.h
     include/pet_project/redis_stream.h
     include/pet_project/selection_sorting.h
-)
-
-# Создаем исполняемый файл
-add_executable(pet_project ${SOURCE_FILES} ${HEADER_FILES})
+    src/main.cpp
+    include/pet_project/directories.h)
